@@ -33,6 +33,8 @@
                 xFrac = 1;
             if (Configuration.LockVerticalAxis)
                 yFrac = 1;
+            if (Configuration.LockVerticalAxisForMouseZoom)  //RML
+                yFrac = 1;
 
             Settings.AxesZoomTo(xFrac, yFrac, X, Y);
         }

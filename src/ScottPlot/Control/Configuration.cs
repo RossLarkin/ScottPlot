@@ -102,6 +102,12 @@ namespace ScottPlot.Control
         public bool LockVerticalAxis = false;
 
         /// <summary>
+        /// //RML
+        /// If enabled, the vertical axis limits cannot be modified by mouse actions
+        /// </summary>
+        public bool LockVerticalAxisForMouseZoom = false;
+
+        /// <summary>
         /// If enabled, the horizontal axis limits cannot be modified by mouse actions
         /// </summary>
         public bool LockHorizontalAxis = false;
