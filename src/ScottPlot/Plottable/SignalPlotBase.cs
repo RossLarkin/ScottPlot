@@ -166,7 +166,7 @@ namespace ScottPlot.Plottable
             }
         }
 
-        [Obsolete("Use the Fill() methods of this object to configure this setting")]
+//RML There is no "Fill" method.        [Obsolete("Use the Fill() methods of this object to configure this setting")]
         public FillType FillType
         {
             get => _FillType;
