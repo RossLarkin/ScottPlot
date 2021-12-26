@@ -303,6 +303,7 @@ namespace ScottPlot
         /// <param name="yPixel">vertical pixel location</param>
         /// <returns>vertical position in coordinate space</returns>
         public double GetCoordinateY(float yPixel) => settings.YAxis.Dims.GetUnit(yPixel);
+        public double GetCoordinateY2(float yPixel) => settings.YAxis2.Dims.GetUnit(yPixel); //RML
 
         /// <summary>
         /// Return the pixel for the given point in coordinate space

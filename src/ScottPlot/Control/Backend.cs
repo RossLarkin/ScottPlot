@@ -544,6 +544,11 @@ namespace ScottPlot.Control
             (double x, double y) = Plot.GetCoordinate(MouseLocationX, MouseLocationY);
             return (double.IsNaN(x) ? 0 : x, double.IsNaN(y) ? 0 : y);
         }
+        public double GetMouseCoordinateY2()  //RML
+        {
+            double y = Plot.GetCoordinateY2( MouseLocationY );
+            return (double.IsNaN(y) ? 0 : y);
+        }
 
         /// <summary>
         /// Return the mouse position (in pixel space) for the last observed mouse position
