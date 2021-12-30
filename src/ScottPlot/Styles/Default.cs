@@ -13,6 +13,7 @@ namespace ScottPlot.Styles
         public virtual Color TickLabelColor => Color.Black;
         public virtual Color TickMajorColor => Color.Black;
         public virtual Color TickMinorColor => Color.Black;
+        public virtual Color CrossHairColor => Color.DarkBlue;  //RML
 
         public virtual string TitleFontName => Drawing.InstalledFont.Default();
         public virtual string AxisLabelFontName => Drawing.InstalledFont.Default();

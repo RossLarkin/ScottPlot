@@ -16,6 +16,7 @@ namespace ScottPlot.Styles
         Color TickLabelColor { get; }
         Color TickMajorColor { get; }
         Color TickMinorColor { get; }
+        Color CrossHairColor { get; }  //RML
 
         string AxisLabelFontName { get; }
         string TitleFontName { get; }

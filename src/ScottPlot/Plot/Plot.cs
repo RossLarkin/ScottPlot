@@ -227,6 +227,13 @@ namespace ScottPlot
                 axis.Line(color: style.FrameColor);
             }
 
+            foreach( IPlottable ip in settings.Plottables) {  //RML
+                Crosshair ch = ip as Crosshair;
+                if (ch == null) continue;
+                ch.HorizontalLine.Color = style.CrossHairColor;
+                ch.VerticalLine  .Color = style.CrossHairColor;
+            }
+
             XAxis2.LabelStyle(color: style.TitleFontColor, fontName: style.TitleFontName);
         }
 

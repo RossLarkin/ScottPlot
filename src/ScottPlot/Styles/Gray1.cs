@@ -13,5 +13,6 @@ namespace ScottPlot.Styles
         public override Color TickLabelColor => ColorTranslator.FromHtml("#757a80");
         public override Color TickMajorColor => ColorTranslator.FromHtml("#757a80");
         public override Color TickMinorColor => ColorTranslator.FromHtml("#757a80");
+        public override Color CrossHairColor => Color.Yellow;  //RML
     }
 }
