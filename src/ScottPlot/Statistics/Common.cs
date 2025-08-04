@@ -1,14 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
-using System.Text;
 
 namespace ScottPlot.Statistics
 {
     public static class Common
     {
-        private readonly static RNGCryptoServiceProvider Rand = new();
+//x        private readonly static RNGCryptoServiceProvider Rand = new();
 
         /// <summary>
         /// Return the minimum, and maximum, and sum of a given array.
@@ -221,10 +219,14 @@ namespace ScottPlot.Statistics
         /// <returns></returns>
         public static int GetRandomInt(int min, int max)
         {
-            byte[] randomBytes = new byte[sizeof(int)];
-            Rand.GetBytes(randomBytes);
-            int randomInt = BitConverter.ToInt32(randomBytes, 0);
-            return Math.Abs(randomInt % (max - min + 1)) + min;
+            int nRand = RandomNumberGenerator.GetInt32( max - min + 1 );
+            return Math.Abs( nRand ) + min;
+
+//x
+//            byte[] randomBytes = new byte[sizeof(int)];
+//            Rand.GetBytes(randomBytes);
+//            int randomInt = BitConverter.ToInt32(randomBytes, 0);
+//            return Math.Abs(randomInt % (max - min + 1)) + min;
         }
 
         /// <summary>
